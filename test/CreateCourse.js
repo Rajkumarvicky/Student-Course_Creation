@@ -12,10 +12,10 @@ describe('CourseCreate', async function () {
     it('LoginFunction', async () => {
 
 
-        await $("//input[@type='email']").setValue("rajakumarank@anthology.com")
+        await $("//input[@type='email']").setValue("$EMAILID")
         await $("//input[@type='submit']").click()
         await browser.pause(4000)
-        await $("//input[@name='passwd']").setValue("Kalaivendhan@16")
+        await $("//input[@name='passwd']").setValue("$PASSWORD")
         await $("//input[@type='submit']").click()
         await browser.pause(4000)
         await $("//input[@type='submit']").click()
@@ -48,11 +48,11 @@ describe('CourseCreate', async function () {
         await browser.pause(10000)
         await $("(//input[@class='form-control ng-pristine ng-valid ng-empty k-invalid ng-touched'])[1]").click()
         await browser.pause(5000)
-        await $("(//input[@class='form-control ng-pristine ng-valid ng-empty k-invalid ng-touched'])[1]").setValue("Computer science")
+        await $("(//input[@class='form-control ng-pristine ng-valid ng-empty k-invalid ng-touched'])[1]").setValue("$COURSENAME")
         await browser.pause(5000)
         await $("(//input[@class='form-control ng-pristine ng-valid ng-empty k-invalid ng-touched'])[2]").click()
         await browser.pause(5000)
-        await $("(//input[@class='form-control ng-pristine ng-valid ng-empty k-invalid ng-touched'])[1]").setValue("COM 108")
+        await $("(//input[@class='form-control ng-pristine ng-valid ng-empty k-invalid ng-touched'])[1]").setValue("$COURSECODE")
         await browser.pause(5000)
         await $("(//span[@class='k-icon k-i-arrow-60-down'])[2]").click()
         await browser.pause(5000)
